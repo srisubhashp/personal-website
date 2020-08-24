@@ -1,0 +1,473 @@
+/*============= RESETS =============*/
+
+/*-- iPhone X Remove Gutters --*/
+html {
+   padding: env(safe-area-inset);
+}
+/*-- Prevent Horizontal Scrolling & Font Style --*/
+html, body {
+   overflow-x: hidden;
+   font-family: 'Lato', sans-serif;
+   color: #505962;
+}
+.text-nuno {
+  
+}
+
+
+
+/*--- Nav Scrolling Offset --*/
+.offset:before {
+   content: "";
+   height: 4rem;
+   display: block;
+   
+}
+
+.offset1:before{
+   content:"";
+   height:4rem;
+   display:block;
+   margin-top: -4rem;
+}
+/*--- Extra Bootstrap Column Padding --*/
+
+
+/*============= NAVIGATION =============*/
+.navbar-brand img {
+   height: 2rem;
+}
+.navbar {
+
+   background-image:
+   linear-gradient(
+      to right,
+      white,
+   rgba(0,0,0,0.6) 30%
+   );
+   padding: .7rem 1rem;
+   text-transform: uppercase;
+   font-weight: 700;
+   letter-spacing: .1rem;
+   font-size: .9rem;
+   transition: background-color .5s ease;
+}
+.navbar-nav li {
+   padding-right: .8rem;
+}
+.navbar-nav .nav-link {
+   color: white;
+   padding-top: .8rem;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+   color:yellow;
+}
+.custom-toggler-icon {
+   color: white;
+   font-size: 1.6rem;
+}
+.navbar.solid,
+.navbar.solid-toggle {
+   background: rgba(0, 0, 0, .7)!important;
+   transition: background-color 1s ease;
+}
+
+/*-- Remove Button Outline --*/
+button:focus, a:focus, a.btn:focus {
+   outline: 0;
+   -webkit-appearance: none;
+   box-shadow: none;
+   transition: all .6s ease;
+}
+button, a, a.btn,
+.svg-inline--fa {
+   transition: all .6s ease;
+}
+
+/*============= LANDING PAGE =============*/
+
+/*--- Fixed Landing Page Section --*/
+.landing {
+   position:relative;
+   width: 100%;
+   height: 100vh;
+   display: table;
+   z-index: -1;
+}
+.home-wrap {
+   clip: rect(0, auto, auto, 0);
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   top: 0;
+   left: 0;
+   
+}
+.home-inner {
+   background-image: url('../img/road.jpeg');
+   position:fixed;
+   
+   min-height: 100vh;
+   width: 100%;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no repeat;
+   -webkit-transform: translateZ(0);
+   transform: translateZ(0);
+   will-change: transform;
+   display: table;
+}
+
+/*-- Landing Page Caption --*/
+
+.img-circle{
+   width:140px;
+   border-radius: 50%;
+   margin-bottom: 2rem;
+}
+.caption {
+   z-index: 1;
+   position: absolute;
+   top: 22%;
+   width: 100%;
+   max-width: 100%;
+}
+.caption h1 {
+   font-size: 1.4rem;
+   padding-top: 3rem;
+   letter-spacing: 0rem;
+   text-shadow: 2px 2.3px black;
+   padding-bottom: 0.3rem;
+}
+.caption h3 {
+   font-size: 1.4rem;
+   text-shadow: 2px 2.3px black;
+   padding-bottom: 0.4rem;
+}
+
+.caption h3.name-tag{
+   font-size:1.6rem;
+}
+
+.btn-lg{
+   margin-top:1.3rem;
+}
+
+
+/*-- Bouncing Down Arrow --*/
+.arrow {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   animation: bounce 2s infinite;
+   -webkit-animation: bounce 2s infinite;
+}
+.down-arrow .svg-inline--fa {
+   color: white;
+   font-size: 2.2rem;
+   opacity: .3;
+}
+.down-arrow .svg-inline--fa:hover {
+   opacity: .8;
+}
+
+/*============= FEATURES SECTION =============*/
+
+.btn-sm {
+   border-width: medium;
+   border-radius: 0;
+   padding: 0.5rem 1.1rem;
+   text-transform: uppercase;
+   font-size: .9rem;
+   margin: 2rem;
+}
+.btn-nuno {
+   background-color: #1EBBA3;
+   color: white;
+}
+.btn-nuno:hover {
+   background-color: #189582;
+   color: white;
+}
+
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+.resume .resume-title {
+   font-size: 26px;
+   font-weight: 700;
+   margin-top: 10px;
+   text-decoration: underline;
+   margin-bottom: 20px;
+   color: #050d18;
+ }
+ #about{
+    background-image: url('../img/sky.jpg');
+    padding-bottom:2rem;
+    background-size: cover;
+
+ }
+
+ .resume .section-title h2{
+    padding-top: 3rem;
+   font-weight:800;
+   font-size:34px;
+   color:black;
+   text-align: center;
+ }
+
+ .resume .resume-item {
+   padding: 0 0 10px 20px;
+   margin-top: -2px;
+   border-left: 2px solid #1f5297;
+   position: relative;
+ }
+ 
+ .resume .resume-item h4 {
+   line-height: 16px;
+   font-size: 18px;
+   font-weight: 600;
+   
+   font-family: "Poppins", sans-serif;
+   color: #050d18;
+   margin-bottom: 10px;
+   
+ }
+ 
+ .resume .resume-item h5 {
+   font-size: 16px;
+   background: #e4edf9;
+   padding: 5px 15px;
+   display: inline-block;
+   font-weight: 600;
+   margin-bottom: 10px;
+ }
+ 
+ .resume .resume-item ul {
+   padding-left: 20px;
+ }
+ 
+ .resume .resume-item ul li {
+   padding-bottom: 6px;
+   font-size: 17.4px;
+   text-shadow: 0.1px 0.1px;
+ }
+
+ .resume .resume-item p{
+   font-size: 17.4px;
+   text-shadow: 0.1px 0.1px;
+ }
+.resume .resume-item a{
+
+   color:#505962;
+   text-decoration:none;
+}
+ .resume .resume-item h6{
+   font-size: 17.4px;
+   text-shadow: 0.1px 0.1px;
+   
+ }
+ 
+ .resume .resume-item:last-child {
+   padding-bottom: 0;
+ }
+ 
+ .resume .resume-item::before {
+   content: "";
+   position: absolute;
+   width: 16px;
+   height: 16px;
+   border-radius: 50px;
+   left: -9px;
+   top: 0;
+   background: #fff;
+   border: 2px solid #1f5297;
+
+ }
+
+.resume .resume-item1::before{
+   content: "";
+   position: absolute;
+   margin-top: 9px;
+   width: 16px;
+   height:16px;
+   border-radius: 50px;
+   left: -9px;
+   top: 5;
+   background: #fff;
+   border: 2px solid #1f5297; 
+}
+
+.resume .resume-item1{
+   padding: 1.3rem 0 2px 20px;
+   margin-top: -2px;
+   
+   position: relative;
+}
+
+.resume .resume-item1 h4{
+   text-decoration: underline;
+}
+
+
+
+
+ 
+
+
+ 
+/*===== FIXED BACKGROUND IMG DARK =====*/
+
+/*--- iOS Fixed Background Image --*/
+
+
+/*============= PORTFOLIO SECTION =============*/
+
+
+/*============= PRICING SECTION =============*/
+
+
+/*============= TEAM SECTION FIXED BG IMG LIGHT =============*/
+
+/*--- Team Light Background Image --*/
+
+
+/*============= SKILLS SECTION =============*/
+
+
+/*============= CLIENTS SECTION =============*/
+
+
+/*============= CONTACT SECTION =============*/
+.footer{
+   background:url('../img/footer/footer.jpg') no-repeat;
+   background-size: cover;
+   color:white;
+}
+
+.row.outer{
+   background-color: rgba(57,63,70,.85);
+   padding:1rem 2rem 3rem; /* top, sides, bottom*/
+}
+
+.row.outer.container.row{
+   padding-top: 5rem;
+}
+.footer img{
+   height:2rem;
+   margin:1.5rem 0; /* top/bottom; left/right*/
+}
+.contact-info{
+   padding-top: 1.5rem;
+   margin-bottom: -2rem!important;
+}
+.contact-info h4{
+   padding-bottom: 1.3rem;
+}
+
+.contact-info h5{
+   padding-bottom: 1rem;;
+}
+
+
+.footer a,
+.footer ul.social li a {
+   color:white;
+}
+
+.footer ul.social li a:hover {
+   color:#1EBBA3;
+}
+
+.footer h3{
+   text-transform: uppercase;
+   margin:1.5rem 0;
+}
+
+/*--- Contact Form --*/
+.form-group{
+   margin-bottom: 1.3rem;
+}
+
+.form-control{
+   background-color: #53595f;
+   border-radius: 0;
+   border:.15rem solid #666b71;
+   color:white!important;
+   font-size: 1.1rem;
+}
+
+.form-control:focus{
+   background-color:#53595f;
+   border: 0.15rem solid #666b71;
+   
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder{
+   color:#b2b5b8!important;
+}
+
+hr.socket{
+   border-top:.2rem solid #666b71;
+   width: 100%;
+}
+
+.location{
+   text-align: right!important;
+   padding-top: 0;
+   margin-top: -1.4rem;
+}
+
+
+/*============= TOP SCROLL =============*/
+
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 992px (lg) */
+
+
+/* Devices under 768px (md) */
+
+
+/* Devices under 576px (sm) */
+
+@media(max-width: 575.98px){
+   .caption {
+      z-index: 1;
+      position: absolute;
+      top: 13%;
+      width: 100%;
+      max-width: 100%;
+   }
+
+   .caption h1 {
+      font-size: 1.4rem;
+      padding-top: 1rem;
+      letter-spacing: 0rem;
+      text-shadow: 2px 2.3px black;
+      padding-bottom: 0.3rem;
+   }
+
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
